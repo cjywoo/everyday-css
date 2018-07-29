@@ -1,0 +1,23 @@
+{
+  "name": "everyday-css",
+  "version": "1.0.0",
+  "description": "> 这边是每日进行css实战的项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjywoo/everyday-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjywoo/everyday-css/issues"
+  },
+  "homepage": "https://github.com/cjywoo/everyday-css#readme",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}

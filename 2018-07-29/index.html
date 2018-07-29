@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.box{
+            width: 400px;
+            height: 50px;
+            font-size: 30px;
+            line-height: 50px;
+            text-align: center;
+            border:2px solid black;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        div.box span{
+            display: inline-block;
+            color:blue;
+            transition: 0.2s;
+        }
+
+        div.box span:nth-child(odd){
+            transform: translateY(100%);
+        }
+        div.box span:nth-child(even){
+            transform: translateY(-100%);
+        }
+
+        div.box span::after{
+            left: 0;
+            content: attr(data-text);
+            position: absolute;
+            color: red;
+        }
+        div.box span:nth-child(odd):after{
+            transform: translateY(-100%);
+        }
+        div.box span:nth-child(even):after{
+            transform: translateY(100%);
+        }
+
+        div.box:hover span{
+            transform: translate(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span data-text="W">W</span>
+        <span data-text="O">O</span>
+        <span data-text="O">O</span>
+        <span data-text="T">T</span>
+        <span data-text="I">I</span>
+        <span data-text="C">C</span>
+    </div>
+    
+</body>
+</html>
